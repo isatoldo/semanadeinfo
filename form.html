@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, incial-scale=1.0">
+        <title>Cadastro de Livros</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+
+    <body>
+        <div id="nav">
+            <div class="container clearfix">
+                <ul id="menu"> 
+                    <li class="active">
+                        <!-- <a href="main"><img src="img/logo-removebg-preview.png" alt=""></a>  -->
+                        <li><a href="#cronograma">Cronograma</a></li>
+                        <li><a href="#maratona">Maratona</a></li>
+                        <li><a href="#jogos">Jogos</a></li>
+                        <li><a href="#parceiros">Parceiros</a></li>
+                        <li><a href="#fotos">Fotos</a></li>
+                    </li>
+                 </ul>
+                 <ul class="right">
+                    <li><a href="#form">Inscreva-se</a></li>
+                    <li><a href="#orcamento">Orçamento</a></li>
+                    <li> <a href="https://www.instagram.com/ifc.oficial.videira/"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <main>
+            <section class="container">
+                <form>
+                    <fieldset>
+                        <legend>Inscreva-se!</legend>
+                        
+                        <div class="input-container">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required autofocus>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="categoria">Categoria</label>
+                            <select name="categoria" id="categoria" required>
+                                <option value="">Selecione</option>
+                                <option value="Informática 1A">Informática 1A</option>
+                                <option value="Informática 1B">Informática 1B</option>
+                                <option value="Informática 2A">Informática 2A</option>
+                                <option value="Informática 2B">Informática 2B</option>
+                                <option value="Informática 3A">Informática 3A</option>
+                                <option value="Informática 3B">Informática 3B</option>
+                                <option value="Eletroeletrônica 1A">Eletroeletrônica 1A</option>
+                                <option value="Eletroeletrônica 1B">Eletroeletrônica 1B</option>
+                                <option value="Eletroeletrônica 2A">Eletroeletrônica 2A</option>
+                                <option value="Eletroeletrônica 2B">Eletroeletrônica 2B</option>
+                                <option value="Eletroeletrônica 3A">Eletroeletrônica 3A</option>
+                                <option value="Eletroeletrônica 3B">Eletroeletrônica 3B</option>
+                                <option value="Agropecuária 1">Agropecuária 1</option>
+                                <option value="Agropecuária 2">Agropecuária 2</option>
+                                <option value="Agropecuária 3">Agropecuária 3</option>
+                            </select>    
+                        </div>
+                        
+                        <div class="input-container">
+                            <label>Jogo</label>
+                            <div class="input-check">
+                                <input type="checkbox" name="jogogs" value="Freefire" id="freefire">
+                                <label for="freefire">Free Fire</label>
+                            </div>
+                            <div class="input-check">
+                                <input type="checkbox" name="jogos" value="RocketLeague" id="rocketleague">
+                                <label for="rocketleague">Rocket League</label>
+                            </div>
+                            <div class="input-check">
+                                <input type="checkbox" name="jogos" value="Valorant" id="valorant">
+                                <label for="valorant">Valorant</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
