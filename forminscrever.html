@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>VIII - SCI</title>
+    <link rel="shortcut icon" type="img" href="img/logo-removebg-preview.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+        
+    <div id="nav">
+        <div class="container clearfix">
+            <ul id="menu"> 
+                <li class="active">
+                    <!-- <a href="main"><img src="img/logo-removebg-preview.png" alt=""></a>  -->
+                    <li><a href="#cronograma">Cronograma</a></li>
+                    <li><a href="#maratona">Maratona</a></li>
+                    <li><a href="#jogos">Jogos</a></li>
+                    <li><a href="#parceiros">Parceiros</a></li>
+                    <li><a href="#fotos">Fotos</a></li>
+                </li>
+             </ul>
+             <ul class="right">
+                <li><a href="forminscrever.html">Inscreva-se</a></li>
+                <li><a href="#orcamento">Orçamento</a></li>
+                <li> <a href="https://www.instagram.com/ifc.oficial.videira/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <h1>Inscrição VIII</h1>
+        <section class="container">
+            <form>
+                <fieldset>
+                    <legend>Inscrição</legend>
+            
+                    <div class="input-container">
+                        <label for="titulo">Nome completo</label>
+                        <input type="text" name="titulo" id="nome" placeholder="Nome" required autofocus>
+                    </div>
+            
+                    <div class="input-container">
+                        <label for="autor"> Sua matricula</label>
+                        <input type="text" name="autor" id="Matricula" placeholder="Matricula" required>
+                    </div>
+                    
+                    <div class="input-container">
+                        <label for="isbn">Seu CPF</label>
+                        <input type="text" name="CPF" id="CPF" placeholder="CPF" pattern="\d{3}.\d{3}.\d{3}-\d{2}" required>
+                    </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="isbn">Seu Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" pattern="\d{3}-\d{10}" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="categoria">Turma</label>
+                        <select name="categoria" id="categoria" required>
+                            <option value="">Selecione</option>
+                            <option value="Ação">1A</option>
+                            <option value="Aventura">1B</option>
+                            <option value="Comédia">2A</option>
+                            <option value="Drama">2B</option>
+                            <option value="Ficção Científica">3A</option>
+                            <option value="Romance">3B</option>
+                        </select>
+                    </div>
+                        <button type="submit">Cadastrar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </fieldset>
+            </form>    
+        </section>
+    </main>
+</body>
+</html>
