@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <title>VIII - SCI</title>
-    <link rel="shortcut icon" type="img" href="img/logo-removebg-preview.png">
+    <link rel="shortcut icon" type="img" href="img/logo.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
+
 <body>
-        
     <div id="nav">
         <div class="container clearfix">
             <ul id="menu"> 
@@ -31,40 +31,40 @@
     </div>
     <main>
         <h1>Inscrição VIII</h1>
-        <section class="container">
+        <section class="containerform">
             <form>
                 <fieldset>
                     <legend>Inscrição</legend>
             
                     <div class="input-container">
-                        <label for="titulo">Nome completo</label>
-                        <input type="text" name="titulo" id="nome" placeholder="Nome" required autofocus>
+                        <label for="nome">Nome completo</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required autofocus>
                     </div>
             
                     <div class="input-container">
-                        <label for="autor"> Sua matricula</label>
-                        <input type="text" name="autor" id="Matricula" placeholder="Matricula" required>
+                        <label for="matricula"> Sua matricula</label>
+                        <input type="text" name="matricula" id="Matricula" placeholder="Matricula" required>
                     </div>
                     
                     <div class="input-container">
-                        <label for="isbn">Seu CPF</label>
+                        <label for="cpf">Seu CPF</label>
                         <input type="text" name="CPF" id="CPF" placeholder="CPF" pattern="\d{3}.\d{3}.\d{3}-\d{2}" required>
                     </div>
                     </div>
                     <div class="input-container">
-                        <label for="isbn">Seu Email</label>
+                        <label for="email">Seu Email</label>
                         <input type="email" name="email" id="email" placeholder="Email" pattern="\d{3}-\d{10}" required>
                     </div>
                     <div class="input-container">
-                        <label for="categoria">Turma</label>
-                        <select name="categoria" id="categoria" required>
+                        <label for="turma">Turma</label>
+                        <select name="turma" id="turma" required>
                             <option value="">Selecione</option>
-                            <option value="Ação">1A</option>
-                            <option value="Aventura">1B</option>
-                            <option value="Comédia">2A</option>
-                            <option value="Drama">2B</option>
-                            <option value="Ficção Científica">3A</option>
-                            <option value="Romance">3B</option>
+                            <option value="Info 1A">Info 1A</option>
+                            <option value="Info 1B">Info 1B</option>
+                            <option value="Info 2A">Info 2A</option>
+                            <option value="Info 2B">Info 2B</option>
+                            <option value="Info 3A">Info 3A</option>
+                            <option value="Info 3B">Info 3B</option>
                         </select>
                     </div>
                         <button type="submit">Cadastrar</button>
