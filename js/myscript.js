@@ -1,22 +1,11 @@
-{/* <html>
-    <head><title>Armazenamento</title>
-        <script>
-            var total = localStorage.getItem('inscritos');
-            if(total !== null) {
-                alert('Total de inscritos: ' + total);
-            } else {
-                total = prompt('Digite o total de inscritos: ');
-                localStorage.setItem('incritos', total);
-            }
-            document.write('Total de inscritos: ' + total);
-        </script>
-    </head>
-    <body>
-        <button onclick="localStorage.removeItem('incritos');">
-            Remover do Armazenamento
-        </button>
-    </body>
-</html> */}
+
+var total
+
+
+
+
+
+
 
 function gebi(id){
     return document.getElementById(id)

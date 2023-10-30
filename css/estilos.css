@@ -377,3 +377,20 @@ button {
   button:hover {
     background-color: #0056b3;
   }
+
+  .programa {
+    position: relative;
+  }
+  
+  #imgprograma {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+  }
+  
+  #texto {
+    position: absolute;
+    font-size: 32px;
+    left: 400px;
+    top: 400px;
+  }
