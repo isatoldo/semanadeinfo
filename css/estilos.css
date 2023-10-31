@@ -379,13 +379,15 @@ button {
   }
 
   .programa {
-    position: relative;
+    position: absolute;
+    background-color: #252b80;
   }
   
   #imgprograma {
-    position: absolute;
     width: 100%;
     height: 800px;
+    opacity: 50%;
+    background-color: #0056b3;
   }
   
   #texto {
@@ -394,3 +396,42 @@ button {
     left: 400px;
     top: 400px;
   }
+
+/* Jogos */
+
+
+#jogos img { 
+    object-fit: cover;
+    width: 100%;
+    height: 280px;
+    border-radius: 8px 8px 0 0;
+}
+
+#jogos h6 {
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #800B10;
+    border-radius: 0 0 8px 8px;
+    font-weight: normal;
+    padding: 3px;
+}
+
+.zoom {
+	overflow: hidden;
+}
+
+.zoom img {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
