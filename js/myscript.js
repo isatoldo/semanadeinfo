@@ -3,21 +3,34 @@ function gebi(id){
     return document.getElementById(id)
 }
 
-let recupera =
-    parseInt(document.getElementById('numero_participantes').value); 
 
-window.onload = function recupera() {
+
+ function recuperar() {
+    document.getElementById('total_inscritos').value;
     // Verifica se o localStorage possui o item com a chave "total_inscritos"
        if (localStorage.getItem("total_inscritos")) {
         // Recupera o valor associado à chave "total_inscritos"
         var totalInscritos = localStorage.getItem("total_inscritos");
         // Converte o valor para o tipo numérico, se necessário
         totalInscritos = parseInt(totalInscritos, 10); // 10 é a base decimal
-        document.getElementById('numero_participantes').value = totalInscritos
+        document.getElementById('total_inscritos').value = totalInscritos
+        alert(totalInscritos)
     }
 }
 
+function salvar() {
+    if (!localStorage.getItem('total_inscritos')) {
+        localStorage.setItem('total_inscritos', "0");
+    }
+
+   var totalInscritos = localStorage.getItem('total_inscritos')
+   totalInscritos = parseInt(totalInscritos, 10) + 1;
+   localStorage.setItem('total_inscritos', totalInscritos)
+    }
+
+
 function multiplicar() {
+    let inscritos = parseInt(gebi("total_inscritos").value);
     let valorN1 = parseInt(gebi("n1").value);
     let valorN2 = parseInt(gebi("n2").value)
     let valorN3 = parseInt(gebi("n3").value);
@@ -30,12 +43,12 @@ function multiplicar() {
     let valorN10 = parseInt(gebi("n10").value)
     let valorN11 = parseInt(gebi("n11").value);
     let valorN12 = parseInt(gebi("n12").value)
-    let resultado1 = valorN1 * valorN2
-    let resultado2 = valorN3 * valorN4
-    let resultado3 = valorN5 * valorN6
-    let resultado4 = valorN7 * valorN8
-    let resultado5 = valorN9 * valorN10
-    let resultado6 = valorN11 * valorN12
+    let resultado1 = valorN1 * valorN2 * inscritos
+    let resultado2 = valorN3 * valorN4 * inscritos
+    let resultado3 = valorN5 * valorN6 * inscritos
+    let resultado4 = valorN7 * valorN8 * inscritos
+    let resultado5 = valorN9 * valorN10 * inscritos
+    let resultado6 = valorN11 * valorN12 * inscritos
     gebi("resultado1").value = resultado1
     gebi("resultado2").value = resultado2
     gebi("resultado3").value = resultado3
@@ -56,18 +69,19 @@ function somadivulgacao(){
     let valord1 = parseInt(gebi("resultado4").value)
     let valord2 = parseInt(gebi("resultado5").value)
     let valord3 = parseInt(gebi("resultado6").value)
-    let totaldivul = valord1 + valord2 + valord3
-    gebi("totaldivul").value = totaldivulgacao
+    let totaldivulgacao = valord1 + valord2 + valord3
+    gebi("totaldivulgacao").value = totaldivulgacao
 }
 
 function somatotal(){
     let valort1 = parseInt(gebi("totalalimentos").value)
-    let valort2 = parseInt(gebi("totaldivul").value)
+    let valort2 = parseInt(gebi("totaldivulgacao").value)
     let somatotal = valort1 += valort2  
     gebi("somatotal").value = ("R$ " + somatotal)
 }
 
 function montartexto(){
-    gebi("texto").value = ("O total de produtos alimentícios vendidos é de " + totalalimentos + ", o total de produtos de divulgação é de " + totaldivulgacao + ", o total de itens em reais vendidos no evento foi de " + somatotal)
+    var totalsoma = gebi("totalsoma").value
+    gebi("texto").value = ("O total de itens em reais vendidos no evento foi de " + totalsoma)
 }
 

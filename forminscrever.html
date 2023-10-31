@@ -7,6 +7,7 @@
     <title>VIII - SCI</title>
     <link rel="shortcut icon" type="img" href="img/logo.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/myscript.js"></script>
 </head>
 
 <body>
@@ -43,17 +44,17 @@
             
                     <div class="input-container">
                         <label for="matricula"> Sua matricula</label>
-                        <input type="text" name="matricula" id="Matricula" placeholder="Matricula" required>
+                        <input type="text" name="matricula" id="Matricula" placeholder="Matricula" value="3324324333">
                     </div>
                     
                     <div class="input-container">
                         <label for="cpf">Seu CPF</label>
-                        <input type="text" name="CPF" id="CPF" placeholder="CPF" pattern="\d{3}.\d{3}.\d{3}-\d{2}" required>
+                        <input type="text" name="CPF" id="CPF" value="122.121.542-45" placeholder="CPF" pattern="\d{3}.\d{3}.\d{3}-\d{2}" required>
                     </div>
                     </div>
                     <div class="input-container">
                         <label for="email">Seu Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email" pattern="\d{3}-\d{10}" required>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
                     </div>
                     <div class="input-container">
                         <label for="turma">Turma</label>
@@ -67,7 +68,7 @@
                             <option value="Info 3B">Info 3B</option>
                         </select>
                     </div>
-                        <button type="submit">Cadastrar</button>
+                        <button type="submit" onclick="salvar()">Cadastrar</button>
                         <button type="reset">Limpar</button>
                     </div>
                 </fieldset>

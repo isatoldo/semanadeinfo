@@ -253,7 +253,6 @@ table h4:hover {
 
 .apoiador:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 .apoiadormeio {
@@ -273,7 +272,6 @@ table h4:hover {
 
 .apoiadormeio:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 /* Formulários */
@@ -391,11 +389,18 @@ button {
     background-color: #7B679A;
   }
   
-  #texto {
+  #texto h1 {
     position: absolute;
-    font-size: 32px;
+    font-size: 40px;
     left: 400px;
     top: 400px;
+  }
+
+  #texto h4 {
+    position: absolute;
+    font-size: 30px;
+    left: 400px;
+    top: 300px;
   }
 
 /* Jogos */
