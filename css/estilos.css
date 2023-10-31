@@ -144,6 +144,7 @@
     width: 100%;
     height: 650px;
     overflow: hidden;
+   background-color:#7B679A;
 }
 
 .galery .fotos {
@@ -232,7 +233,7 @@ table h4:hover {
     display: flex;
     justify-content: space-around;
     padding: 60px;
-    background-color: white;
+    background-color: #7B679A;
 }
 
 .apoiador {
@@ -387,7 +388,7 @@ button {
     width: 100%;
     height: 800px;
     opacity: 50%;
-    background-color: #0056b3;
+    background-color: #7B679A;
   }
   
   #texto {
@@ -399,6 +400,9 @@ button {
 
 /* Jogos */
 
+.roxo {
+    background-color: #7B679A;
+}
 
 #jogos img { 
     object-fit: cover;
@@ -411,7 +415,7 @@ button {
     text-align: center;
     font-size: 15px;
     color: #ffffff;
-    background-color: #800B10;
+    background-color: #52057B;
     border-radius: 0 0 8px 8px;
     font-weight: normal;
     padding: 3px;
