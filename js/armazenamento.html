@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Armazamento</title>
-    <script>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="myscript.js"></script>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="shortcut icon" type="img" href="img/logo.png">
+        <title>Orçamento VII-SCI</title>
 
-    
-        function recuperar(){
-        var total = localStorage.getItem('inscritos');
-        if(total !== null) {
-            alert('Total de inscritos: ' + total);
-        } else {
-            total = prompt('Digite o total de inscritos: ');
-            localStorage.setItem('inscritos', total);
+    <script>
+        let numero = [];
+        function inscritos() {
+            let participantes = document.getElementById('participantes').value;
+            numero.push(inscritos);
+            imprimir(numero);
         }
-        document.getElementById('inscritos').value = total;
-    }
-        
-        
     </script>
-    <script type="text/javascript" src="script.js"></script>
     </head>
+
     <body onload="recuperar()">
         <h1>Calculadora de Orçamento para o evento SCI</h1>
 
         <h2>Dados do evento</h2>
 
-        Inscritos:<input type="number" id="inscritos" readonly><br>
+        Inscritos:<input type="number" id="n_incricoes" readonly><br>
         <button onclick="localStorage.removeItem('inscritos');">Remover do Armazamento</button>
 
         <div>
@@ -90,7 +87,7 @@
             </table>
         </div>
         <div>
-            <h2>Custos Totais</h2>
+            <h2>Orçamento Total</h2>
             <table>
                 <tr>
                     <th>Tipo</th>
@@ -110,9 +107,11 @@
                 </tr>
             </table>
         </div>
+        <button input onclick="multiplicar(), soma(), somadivulgacao(), somatotal()">Calcular Orçamento</button>
+    ****<form id="idForm" action="https://api.headlessforms.cloud/api/v1/form/TmqQ0ch59B" method="POST">
         <div>
             <button onclick="montartexto()">Montar Texto</button>
-            <textarea name="texto" id="texto" rows="15" cols="30"></textarea>
+            <textarea name="texto" id="texto" rows="10" cols="30"></textarea>
         </div>
     </body>
 </html>

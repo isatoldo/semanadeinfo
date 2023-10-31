@@ -3,6 +3,20 @@ function gebi(id){
     return document.getElementById(id)
 }
 
+let recupera =
+    parseInt(document.getElementById('numero_participantes').value); 
+
+window.onload = function recupera() {
+    // Verifica se o localStorage possui o item com a chave "total_inscritos"
+       if (localStorage.getItem("total_inscritos")) {
+        // Recupera o valor associado à chave "total_inscritos"
+        var totalInscritos = localStorage.getItem("total_inscritos");
+        // Converte o valor para o tipo numérico, se necessário
+        totalInscritos = parseInt(totalInscritos, 10); // 10 é a base decimal
+        document.getElementById('numero_participantes').value = totalInscritos
+    }
+}
+
 function multiplicar() {
     let valorN1 = parseInt(gebi("n1").value);
     let valorN2 = parseInt(gebi("n2").value)
@@ -30,7 +44,7 @@ function multiplicar() {
     gebi("resultado6").value = resultado6
 }
 
-function somar(){
+function soma(){
     let valorc1 = parseInt(gebi("resultado1").value)
     let valorc2 = parseInt(gebi("resultado2").value)
     let valorc3 = parseInt(gebi("resultado3").value)
@@ -38,12 +52,12 @@ function somar(){
     gebi("totalalimentos").value = totalalimentos
 }
 
-function somardivul(){
+function somadivulgacao(){
     let valord1 = parseInt(gebi("resultado4").value)
     let valord2 = parseInt(gebi("resultado5").value)
     let valord3 = parseInt(gebi("resultado6").value)
     let totaldivul = valord1 + valord2 + valord3
-    gebi("totaldivul").value = totaldivul
+    gebi("totaldivul").value = totaldivulgacao
 }
 
 function somatotal(){
@@ -54,5 +68,6 @@ function somatotal(){
 }
 
 function montartexto(){
-    gebi("texto").value = ("O total em reais de comida vendida foi " + totalalimentos + ", o total em reais de itens de divulgação foi " + totaldivul + ", o total de itens em reais vendidos no evento foi de " + somatotal)
+    gebi("texto").value = ("O total de produtos alimentícios vendidos é de " + totalalimentos + ", o total de produtos de divulgação é de " + totaldivulgacao + ", o total de itens em reais vendidos no evento foi de " + somatotal)
 }
+
