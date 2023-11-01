@@ -68,8 +68,17 @@
     font-weight: bold;
 }
 
+#main{
+    text-align: center;
+}
+
+#main h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
 #main img {
-    size: 50px;
+    height: 550px;
 }
 
 .banner {
@@ -90,10 +99,6 @@
     background-position: center;
     z-index: -1;
     opacity: 0.95;
-}
-
-#inicio h1 {
-    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -377,31 +382,19 @@ button {
     background-color: #0056b3;
   }
 
-  .programa {
-    position: absolute;
-    background-color: #252b80;
-  }
-  
-  #imgprograma {
-    width: 100%;
-    height: 800px;
-    opacity: 50%;
-    background-color: #7B679A;
-  }
-  
-  #texto h1 {
+#texto h1 {
     position: absolute;
     font-size: 40px;
     left: 400px;
     top: 400px;
-  }
+}
 
-  #texto h4 {
+#texto h4 {
     position: absolute;
     font-size: 30px;
     left: 400px;
     top: 300px;
-  }
+}
 
 /* Jogos */
 
@@ -442,5 +435,27 @@ button {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
+
+footer {
+    background-color: #131212;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+#foot h1 {
+    font-size: 10px;
+    color: rgb(10, 143, 144);;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#foot h3 {
+    font-size: 8px;
+    color: rgb(10, 143, 144);;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 
 

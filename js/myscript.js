@@ -1,9 +1,9 @@
 
+
+// Orçamento
 function gebi(id){
     return document.getElementById(id)
 }
-
-
 
  function recuperar() {
     document.getElementById('total_inscritos').value;
@@ -61,7 +61,7 @@ function soma(){
     let valorc1 = parseInt(gebi("resultado1").value)
     let valorc2 = parseInt(gebi("resultado2").value)
     let valorc3 = parseInt(gebi("resultado3").value)
-    let totalalimentos = valorc1 + valorc2 + valorc3
+    totalalimentos = valorc1 + valorc2 + valorc3
     gebi("totalalimentos").value = totalalimentos
 }
 
@@ -69,19 +69,21 @@ function somadivulgacao(){
     let valord1 = parseInt(gebi("resultado4").value)
     let valord2 = parseInt(gebi("resultado5").value)
     let valord3 = parseInt(gebi("resultado6").value)
-    let totaldivulgacao = valord1 + valord2 + valord3
+    totaldivulgacao = valord1 + valord2 + valord3
     gebi("totaldivulgacao").value = totaldivulgacao
 }
 
 function somatotal(){
-    let valort1 = parseInt(gebi("totalalimentos").value)
-    let valort2 = parseInt(gebi("totaldivulgacao").value)
-    let somatotal = valort1 += valort2  
+    let valor1 = parseInt(gebi("totalalimentos").value);
+    let valor2 = parseInt(gebi("totaldivulgacao").value);
+    somatotal = valor1 + valor2  
     gebi("somatotal").value = ("R$ " + somatotal)
 }
 
 function montartexto(){
-    var totalsoma = gebi("totalsoma").value
-    gebi("texto").value = ("O total de itens em reais vendidos no evento foi de " + totalsoma)
+    let totalsoma = gebi("somatotal").value
+    gebi("texto").value = ("O total de itens em reais vendidos no evento foi de " + totalsoma + " - Isadora Toldo, Karolina Peres e Naiara dos Santos")
 }
+
+
 
