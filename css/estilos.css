@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Raleway;
 }
 
 #nav {
@@ -179,10 +180,7 @@
 }
 
 /* Tabela */
-*{
-    font-family: system-ui;
-}
-   
+ 
 table{
     border-collapse: collapse;
     border: 7px solid #252b80;
@@ -419,6 +417,13 @@ button {
     padding: 3px;
 }
 
+button {
+    width: 180px;
+    height: 60px;
+    position: relative;
+    background: #52057B;
+}
+
 .zoom {
 	overflow: hidden;
 }
@@ -445,16 +450,16 @@ footer {
 
 #foot h1 {
     font-size: 10px;
-    color: rgb(10, 143, 144);;
+    color: rgb(71, 163, 190);;
     text-align: center;
     text-transform: uppercase;
 }
 
 #foot h3 {
     font-size: 8px;
-    color: rgb(10, 143, 144);;
+    color: rgb(71, 163, 190);;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: uppercase; 
 }
 
 

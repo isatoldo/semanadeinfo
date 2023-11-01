@@ -18,6 +18,7 @@ function gebi(id){
     }
 }
 
+// Para começar o valor de inscritos como 0 
 function salvar() {
     if (!localStorage.getItem('total_inscritos')) {
         localStorage.setItem('total_inscritos', "0");
